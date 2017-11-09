@@ -30,7 +30,9 @@ The pipeline consisted of several steps:
 6) Draw the lines on the image. 
     In order to construct a filled line from the multiple small lines being outputed by the Hough algorithm, the following steps were performed:
         -based on the slope of each line, they were labeled as being either from the left lane marking or from the right lane marking
-        -for each marking, merge the list of lines together by getting the end points of each individual line and drawing the best line through them. 
+        
+        -for each marking, merge the list of lines together by computing the weighted averate of the slopes and intercepts
+        
 
 
 ### 2. Identify potential shortcomings with your current pipeline
